@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Web Tools - Image Tools Suite</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+     <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🛠️</span>
+                <span>Free Web Tools</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="image-compressor.html" class="nav-link">Compressor</a></li>
+                <li><a href="image-scaller.html" class="nav-link">Scaler</a></li>
+                <li><a href="qr-generator.html" class="nav-link">QR Generator</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <div class="tools-grid">
+            <!-- Image Compressor -->
+            <div class="tool-card">
+                <div class="tool-header">
+                    <span class="tool-icon">🗜️</span>
+                    <h2 class="tool-title">Image Compressor</h2>
+                </div>
+
+                <div class="upload-area" id="compressUpload">
+                    <div class="upload-icon">📁</div>
+                    <div class="upload-text">Click to upload or drag & drop</div>
+                    <div class="upload-subtext">PNG, JPG, WEBP (Max 10MB)</div>
+                </div>
+                <input type="file" id="compressFile" accept="image/*">
+
+                <div class="input-group">
+                    <label for="quality">Quality: <span id="qualityValue">80</span>%</label>
+                    <input type="range" id="quality" min="1" max="100" value="80">
+                </div>
+
+                <button class="btn" id="compressBtn" disabled>Compress Image</button>
+
+                <div class="preview-area" id="compressPreview">
+                    <div class="size-info">
+                        <div class="size-item">
+                            <div class="size-label">Original</div>
+                            <div class="size-value" id="originalSize">-</div>
+                        </div>
+                        <div class="size-item">
+                            <div class="size-label">Compressed</div>
+                            <div class="size-value" id="compressedSize">-</div>
+                        </div>
+                        <div class="size-item">
+                            <div class="size-label">Saved</div>
+                            <div class="size-value" id="savedSize">-</div>
+                        </div>
+                    </div>
+                    <img id="compressedImage" class="preview-image" alt="Compressed">
+                    <button class="btn" id="downloadCompressed">Download Compressed Image</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>🛠️ Free Web Tools</h3>
+                    <p>Professional image processing tools, completely free and privacy-focused. All processing happens in your browser - no uploads to servers!</p>
+                    <div class="social-links">
+                        <a href="#" title="GitHub">💻</a>
+                        <a href="#" title="Twitter">🐦</a>
+                        <a href="#" title="LinkedIn">💼</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Tools</h3>
+                    <ul class="footer-links">
+                        <li><a href="#compressor">Image Compressor</a></li>
+                        <li><a href="#scaler">Image Scaler</a></li>
+                        <li><a href="#qr-generator">QR Code Generator</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Free Web Tools. All rights reserved. Made with ❤️ for the web community.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
